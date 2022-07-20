@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
-  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Montserrat', sans-serif;
   margin: 0%;
 }
 
@@ -14,4 +14,27 @@
 .nav h1{
   font-weight: bolder;
   font-size: 2em;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin-top: 3em;
+  margin-left: 3em;
+}
+
+.card img{
+  height: 400px;
+  margin-right: 5em;
+  margin-left: 3em;
+  border-radius: 0.5em;
+}
+.card span a{
+  color: grey;
+}
+.card h1{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }

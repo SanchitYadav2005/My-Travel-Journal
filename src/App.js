@@ -6,17 +6,21 @@ import data from './data'
 
 
 
-export default function App(){
-  const cards = data.map(iteams =>{
-    return(
-      <Card 
-        location= {iteams.location}
-        img= {iteams.img}
-        map = {iteams.map}
+export default function App() {
+  const cards = data.map(iteams => {
+    return (
+      <Card
+        key={iteams.id}
+        country={iteams.countryName}
+        place={iteams.placeName}
+        img={iteams.imgSrc}
+        date={iteams.visitDate}
+        location={iteams.map}
+        info={iteams.discription}
       />
     )
   })
-  return(
+  return (
     <div>
       <Navbar />
       {cards}
